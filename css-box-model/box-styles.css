@@ -7,52 +7,54 @@
  */
 
 * {
-    /*It’s usually a good idea to override default 
+  /*It’s usually a good idea to override default 
     styles to a predictable value using the “universal” 
     CSS selector (*).*/
 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1, p {
-    background-color: #DDE0E3; /* Light gray*/
+h1,
+p {
+  background-color: #dde0e3; /* Light gray*/
 }
 
-em, strong {
-    background-color: #B2D6FF; /* Light blue*/
-    display: inline; /* This is the default for em and strong */
+em,
+strong {
+  background-color: #b2d6ff; /* Light blue*/
+  display: inline; /* This is the default for em and strong */
 }
 
 h1 {
-    padding: 50px;
-    border-bottom: 1px solid #5D6063; 
+  padding: 50px;
+  border-bottom: 1px solid #5d6063;
 }
 
-p{
-    /* padding: 20px 10px; /* Vertical Horizontal */
-    padding: 20px 0 20px 10px; /* Top Right Bottom Left */
-    margin-top: 25px;
-    margin-bottom: 50px;
+p {
+  /* padding: 20px 10px; /* Vertical Horizontal */
+  padding: 20px 0 20px 10px; /* Top Right Bottom Left */
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
-strong{
-    /*padding: 50px;  Do not do this to inline element. If you want
+strong {
+  /*padding: 50px;  Do not do this to inline element. If you want
                       to play with the vertical space of a page, you MUST
                       be working with block-level elements! */
-    margin: 50px;                
+  margin: 50px;
 }
 
-div{
-    color: #FFF;
-  background-color: #5995DA;
+div {
+  color: #fff;
+  background-color: #5995da;
   font-weight: bold;
   padding: 20px;
   text-align: center;
-  border: 2px solid #5D6063;
+  border: 2px solid #5d6063;
   border-radius: 5px;
-  
+
   width: 200px;
   box-sizing: border-box;
 
@@ -63,4 +65,3 @@ div{
   the full width of the browser, making “center 
   alignment” meaningless.*/
 }
-

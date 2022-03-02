@@ -1,0 +1,102 @@
+/*
+ * The specificity of selectors we’ve seen in this chapter are show below, from greatest to least:
+ *
+ * #button-2
+ * .button:link
+ * a:link and .synopsis em (they’re equal)
+ * .button
+ * a
+ */
+
+p:first-of-type {
+    color: #7E8184;
+    font-style: italic;
+  }
+
+.button:link,
+.button:visited {
+  display: block;
+  text-decoration: none;
+
+  background-color: #5995da; /* Blue */
+  color: #fff;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5d6063; /* Dark gray */
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto; /* Vertical Horizontal */
+}
+
+.button:hover,
+.button:visited:hover {
+  color: #fff;
+  background-color: #76aeed; /* Light blue */
+}
+
+.page {
+  width: 600px;
+  margin: 0 auto;
+}
+
+call-to-action:link,
+.call-to-action:visited {
+  font-style: italic;
+  background-color: #EEB75A;     /* Yellow */
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+  background-color: #F5CF8E;     /* Light yellow */
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+  background-color: #EEB75A;     /* Yellow */
+}
+
+.synopsis em {
+  font-style: normal;
+}
+
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+
+a:active {
+  color: red;
+}
+
+a:visited:hover {
+  color: orange;
+}
+
+a:visited:active {
+  color: red;
+}
+
+p:last-of-type{
+    margin-bottom: 50px;
+}
+
+/*This overlapping functionality is more reason to avoid ID selectors. 
+They create a dependency between your website’s URLs and your CSS styles. 
+Imagine using a bunch of id attributes on your headings as both URL 
+fragments and ID selectors. If you forgot to update your stylesheet 
+every time you edited the URL of a section, you would actually break 
+your website.*/
+#button-2{ /* Avoid styling ID selectors. Use class instead*/
+    color: #5D6063;
+}
