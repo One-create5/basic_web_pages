@@ -1,0 +1,113 @@
+/*
++ Use display: flex; to create a flex container.
++ Use justify-content to define the horizontal alignment of items.
++ Use align-items to define the vertical alignment of items.
++ Use flex-direction if you need columns instead of rows.
++ Use the row-reverse or column-reverse values to flip item order.
++ Use order to customize the order of individual elements.
++ Use align-self to vertically align individual items.
++ Use flex to create flexible boxes that can stretch and shrink.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* menu-container */
+nav{
+    color: #fff;
+    background-color: #5995DA;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login{
+    margin-left: 20px;
+}
+
+/* header-container */
+header{
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+}
+
+/* header */
+.header_items{
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* photo-grid-container */
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid{
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.photo-grid-item{
+    width: 300px;
+    height: 300px;
+}
+
+.firt-item{
+    order: 1;
+}
+
+.last-item{
+    order: -1;
+}
+
+.social,
+.subscribe {
+  align-self:flex-end;
+  margin-bottom: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item{
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+}
+
+.footer-one,
+.footer-three{
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
+}
+
+.signup{
+    margin-left: auto;
+}
